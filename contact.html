@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - LearnWithImtiaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">LearnWithImtiaz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero it-theme">
+    <h2 class="fade-in">Contact Us</h2>
+    <p class="fade-in">Send us a message or reach us on social media and WhatsApp</p>
+</section>
+
+<section class="contact-form">
+    <form action="contact.php" method="post" onsubmit="return validateForm()">
+        <input type="text" name="name" id="name" placeholder="Your Name"><br><br>
+        <input type="email" name="email" id="email" placeholder="Your Email"><br><br>
+        <textarea name="message" id="message" placeholder="Your Message"></textarea><br><br>
+        <button type="submit" onclick="playSound()">Send</button>
+    </form>
+</section>
+
+<section class="contact-info">
+    <h3>Reach Us On</h3>
+    <p><a href="https://wa.me/923040282872" target="_blank" class="social-btn whatsapp">WhatsApp</a></p>
+    <p><a href="https://www.facebook.com/yourcenter" target="_blank" class="social-btn facebook">Facebook</a></p>
+    <p><a href="https://www.instagram.com/yourcenter" target="_blank" class="social-btn instagram">Instagram</a></p>
+    <p><a href="https://www.Tiktok.com/yourchannel" target="_blank" class="social-btn tiktok">Tiktok</a></p>
+</section>
+
+<footer>
+    <p>© 2026 My Center</p>
+</footer>
+
+<audio id="clickSound" src="click.mp3"></audio>
+<script src="script.js"></script>
+<script>
+function validateForm() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    if(name=="" || email=="") {
+        alert("Name and Email required!");
+        return false;
+    }
+    return true;
+}
+</script>
+</body>
+</html>

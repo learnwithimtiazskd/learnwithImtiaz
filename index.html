@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn-With-Imtiaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">LearnWithImtiaz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section with Slider -->
+<section class="hero">
+    <div class="slider">
+        <img src="hoto1.png" class="slide" style="display:block;">
+        <img src="hoto2.png" class="slide">
+        <img src="hoto3.png" class="slide">
+        <img src="hoto4.png" class="slide">
+        <img src="photo5.png" class="slide">
+        <img src="hoto6.png" class="slide">
+    </div>
+    <h2 class="fade-in">Learn Skills for Your Future</h2>
+    <p class="fade-in">IT, Hardware, Multimedia, Projects</p>
+    
+</section>
+
+<footer>
+    <p>© 2026 My Center</p>
+</footer>
+
+<audio id="clickSound" src="click.mp3"></audio>
+<script src="script.js"></script>
+<script>
+/* Slider */
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for(let i=0;i<slides.length;i++) slides[i].style.display="none";
+    slideIndex++;
+    if(slideIndex>slides.length) slideIndex=1;
+    slides[slideIndex-1].style.display="block";
+    setTimeout(showSlides,3000);
+}
+</script>
+
+</body>
+</html>

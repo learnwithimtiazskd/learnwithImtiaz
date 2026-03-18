@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses - LearnWithImtiaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">LearnWithImtiaz</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero it-theme">
+    <h2 class="fade-in">Our IT & Hardware Courses</h2>
+    <p class="fade-in">Learn modern IT skills, web development, graphic design, and hardware repair</p>
+</section>
+
+<section class="courses">
+    <div class="card it-card" onclick="playSound()">
+        <h3>MS Office</h3>
+        <p>Word, Excel, PowerPoint</p>
+    </div>
+
+    <div class="card it-card" onclick="playSound()">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript</p>
+        <video width="100%" controls>
+            <source src="ideo1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="card it-card" onclick="playSound()">
+        <h3>Graphic Design</h3>
+        <p>Photoshop, Canva, Creative Projects</p>
+        <video width="100%" controls>
+            <source src="video2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="card it-card" onclick="playSound()">
+        <h3>Hardware & Printer Repair</h3>
+        <p>Computer hardware troubleshooting & printer repair</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Center</p>
+</footer>
+
+<audio id="clickSound" src="click.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
